@@ -1,7 +1,7 @@
 package lab01;
 import java.util.Scanner;
 
-public class ques05 {
+public class Lab01Q5 {
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
 

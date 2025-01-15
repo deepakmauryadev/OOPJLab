@@ -1,5 +1,5 @@
 package lab01;
-public class ques02 {
+public class Lab01Q2 {
     public static void main(String[] args) throws Exception {
       int marks = 73;
       

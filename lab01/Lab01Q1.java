@@ -1,5 +1,5 @@
 package lab01;
-public class ques01 {
+public class Lab01Q1 {
     public static void main(String[] args) throws Exception {
         System.out.println("Deepak Maurya");
         System.out.println("23053044");
