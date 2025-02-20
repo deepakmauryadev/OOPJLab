@@ -40,21 +40,17 @@ class Substaff extends Manager {
 
 public class Lab05Q3 {
   public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
+    Scanner sc = new Scanner(System.in);
 
     System.out.print("Enter basic salary: ");
-    double basicSalary = scanner.nextDouble();
+    double basicSalary = sc.nextDouble();
 
     Substaff substaff = new Substaff(basicSalary);
 
-    double earnings = substaff.earnings();
-    double deductions = substaff.deductions();
-    double bonus = substaff.bonus();
+    System.out.println("Earnings - " + substaff.earnings());
+    System.out.println("Deduction - " + substaff.deductions());
+    System.out.println("Bonus - " + substaff.bonus());
 
-    System.out.println("Earnings - " + earnings);
-    System.out.println("Deduction -" + deductions);
-    System.out.println("Bonus - " + bonus);
-
-    scanner.close();
+    sc.close();
   }
 }

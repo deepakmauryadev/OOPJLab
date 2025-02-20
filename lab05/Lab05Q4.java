@@ -34,27 +34,27 @@ class Head implements Manager {
 
 public class Lab05Q4 {
   public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
+    Scanner sc = new Scanner(System.in);
     
     System.out.print("Enter employee id: ");
-    int empId = scanner.nextInt();
-    scanner.nextLine();
+    int empId = sc.nextInt();
+    sc.nextLine();
     
     System.out.print("Enter employee name: ");
-    String empName = scanner.nextLine();
+    String empName = sc.nextLine();
     
     System.out.print("Enter department id: ");
-    int deptId = scanner.nextInt();
-    scanner.nextLine();
+    int deptId = sc.nextInt();
+    sc.nextLine();
     
     System.out.print("Enter department name: ");
-    String deptName = scanner.nextLine();
+    String deptName = sc.nextLine();
     
     Head head = new Head(empId, empName, deptId, deptName);
     
     head.getDetails();
     head.getDeptDetails();
     
-    scanner.close();
+    sc.close();
   }
 }

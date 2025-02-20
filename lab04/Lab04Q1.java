@@ -39,15 +39,15 @@ class Box extends Sheet {
 
 public class Lab04Q1 {
   public static void main(String[] args) {
-    Scanner scn = new Scanner(System.in);
+    Scanner sc = new Scanner(System.in);
 
     System.out.println("Enter 2D sheet dimensions"); 
 
     System.out.print("Length: ");
-    int length1 = scn.nextInt();
+    int length1 = sc.nextInt();
 
     System.out.print("Width: ");
-    int width1 = scn.nextInt();
+    int width1 = sc.nextInt();
 
     Sheet sheet = new Sheet(40, length1, width1);
     System.out.println("Cost: " + sheet.calculateCost());
@@ -56,15 +56,17 @@ public class Lab04Q1 {
     System.out.println("Enter 3D box dimensions"); 
 
     System.out.print("Length: ");
-    int length = scn.nextInt();
+    int length = sc.nextInt();
 
     System.out.print("Width: ");
-    int width = scn.nextInt();
+    int width = sc.nextInt();
 
     System.out.print("Height: ");
-    int height = scn.nextInt();
+    int height = sc.nextInt();
 
     Box box = new Box(60, length, width, height);
     System.out.println("Cost: " + box.calculateCost());
+
+    sc.close();
   }
 }
