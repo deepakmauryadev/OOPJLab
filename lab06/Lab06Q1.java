@@ -4,11 +4,11 @@ public class Lab06Q1 {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
-    int SIZE = 4;
-    int[] arr = new int[SIZE];
+    int size = 4;
+    int[] arr = new int[size];
 
     System.out.println("Enter elements of array.");
-    for (int i=0; i<SIZE; i++) {
+    for (int i=0; i<size; i++) {
       System.out.print(i + ": ");
       arr[i] = sc.nextInt();
     }

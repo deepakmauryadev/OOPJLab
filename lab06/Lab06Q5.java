@@ -1,22 +1,20 @@
-class CheckArgument extends Exception {
-  CheckArgument(String message) {
+class CheckArgumentException extends Exception {
+  CheckArgumentException(String message) {
     super(message);
   }
 }
 
-class Argument {
-  static void Validate(String[] args, int n) throws CheckArgument {
-    if (args.length < n) throw new CheckArgument("Argument is less than " + n + "!");
-  }
-}
-
 public class Lab06Q5 {
+  static void validateArgument(String[] args, int n) throws CheckArgumentException {
+    if (args.length < n) throw new CheckArgumentException("Argument is less than " + n + "!");
+  }
+
   public static void main(String[] args) {
     int n = 4;
     int output = 0;
 
     try {
-      Argument.Validate(args, n);
+      validateArgument(args, n);
 
       for (int i=0; i<n; i++) {
         int num = Integer.parseInt(args[i]);
@@ -24,7 +22,7 @@ public class Lab06Q5 {
       }
 
       System.out.println(output);
-    } catch (CheckArgument e) {
+    } catch (CheckArgumentException e) {
       System.err.println("Exception occurred - " + e);
     }
   }
